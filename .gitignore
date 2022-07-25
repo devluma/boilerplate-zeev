@@ -35,3 +35,7 @@ dist
 
 # TODOs
 *TODO*.md
+
+# Temp files
+tmp/*
+!tmp/.gitkeep
