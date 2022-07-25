@@ -1,0 +1,53 @@
+{
+  "name": "fieb-senai-registros-coordenacao",
+  "version": "0.0.1",
+  "description": "Projeto MBS Consulting",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "clean": "rimraf dist",
+    "lint": "eslint . --max-warnings=0 --fix",
+    "dev": "zeev",
+    "build:email": "node scripts/email.js"
+  },
+  "lint-staged": {
+    "**/*.js": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MBS-Consulting-IT/fieb-senai-registros-coordenacao.git"
+  },
+  "author": "Pedro Bernardo <pedro@mbsconsulting.com.br>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MBS-Consulting-IT/fieb-senai-registros-coordenacao/issues"
+  },
+  "homepage": "https://github.com/MBS-Consulting-IT/fieb-senai-registros-coordenacao#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "dotenv-flow": "^3.2.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "husky": "^8.0.1",
+    "json-server": "^0.17.0",
+    "lint-staged": "^13.0.3",
+    "vitest": "^0.18.0",
+    "zeev-mail": "^0.3.0",
+    "zeev-run": "^0.4.0"
+  },
+  "dependencies": {
+    "date-fns": "^2.28.0",
+    "inutile": "^0.5.0",
+    "maestro-ui": "^0.10.0",
+    "mitt": "^3.0.0",
+    "mssql": "^8.1.2",
+    "sass": "^1.53.0",
+    "zeev-binder": "^0.2.1",
+    "zeev-table": "^0.0.1",
+    "zeev-utils": "^0.8.3"
+  }
+}
