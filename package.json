@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "Projeto MBS Consulting",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "install": "node scripts/install.js",
     "prepare": "husky install",
     "clean": "rimraf dist",
     "lint": "eslint . --max-warnings=0 --fix",
@@ -35,6 +37,7 @@
     "husky": "^8.0.1",
     "json-server": "^0.17.0",
     "lint-staged": "^13.0.3",
+    "shelljs": "^0.8.5",
     "vitest": "^0.18.0",
     "zeev-mail": "^0.3.0",
     "zeev-run": "^0.4.0"
